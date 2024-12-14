@@ -1,0 +1,109 @@
+/* General Styling */
+body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Shared styles */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #00ffcc;
+}
+
+header h1 {
+    color: #00ffcc;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 2px solid #00ffcc;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    border-top: 2px solid #00ffcc;
+    color: #00ffcc;
+}
+
+/* Page-specific backgrounds */
+body.home {
+    background: url('../images/logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.activity1 {
+    background: url('../images/logo1.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.activity2 {
+    background: url('../images/logo2.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.activity3 {
+    background: url('../images/logo3.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Buttons and animations */
+button {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000;
+    transform: scale(1.1);
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h1 {
+    animation: pulse 2s infinite;
+}
