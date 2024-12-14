@@ -13,6 +13,6 @@ guessButton.addEventListener("click", () => {
         result.style.color = "limegreen";
     } else {
         result.textContent = userGuess < randomNumber ? "Too low! Try again." : "Too high! Try again.";
-        result.style.color = "yellow";
+        result.style.color = "purple";
     }
 });
